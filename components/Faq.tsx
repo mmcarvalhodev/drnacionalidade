@@ -29,7 +29,7 @@ export default function Faq() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Dúvidas frequentes
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-forest-900 mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-4">
             Perguntas que sempre recebemos
           </h2>
           <div className="gold-rule w-24 mx-auto" />
@@ -39,10 +39,10 @@ export default function Faq() {
           {faqs.map((f, i) => (
             <details
               key={i}
-              className="group bg-cream-50 border border-forest-100 rounded-xl px-6 py-5"
+              className="group bg-cream-50 border border-navy-100 rounded-xl px-6 py-5"
             >
               <summary className="flex items-center justify-between gap-4">
-                <span className="font-serif text-xl text-forest-900">{f.q}</span>
+                <span className="font-serif text-xl text-navy-900">{f.q}</span>
                 <span className="faq-icon text-gold-500 text-2xl leading-none">+</span>
               </summary>
               <p className="mt-4 text-ink-700 leading-relaxed text-sm">{f.a}</p>

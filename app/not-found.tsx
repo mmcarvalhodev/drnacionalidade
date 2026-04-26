@@ -7,7 +7,7 @@ export default function NotFound() {
         <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-4">
           Erro 404
         </div>
-        <h1 className="font-serif text-5xl text-forest-900 mb-4">
+        <h1 className="font-serif text-5xl text-navy-900 mb-4">
           Página não encontrada
         </h1>
         <p className="text-ink-700 mb-8">
@@ -15,7 +15,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 bg-forest-800 text-cream-50 px-6 py-3 rounded-full font-medium hover:bg-forest-900 transition-colors"
+          className="inline-flex items-center gap-2 bg-navy-800 text-cream-50 px-6 py-3 rounded-full font-medium hover:bg-navy-900 transition-colors"
         >
           Voltar à página inicial
         </Link>

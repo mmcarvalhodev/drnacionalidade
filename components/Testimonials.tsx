@@ -27,7 +27,7 @@ export default function Testimonials() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Quem já passou por aqui
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-forest-900 mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-4">
             Depoimentos
           </h2>
           <div className="gold-rule w-24 mx-auto" />
@@ -37,14 +37,14 @@ export default function Testimonials() {
           {items.map((t) => (
             <figure
               key={t.name}
-              className="bg-cream-50 rounded-2xl p-8 border border-forest-100"
+              className="bg-cream-50 rounded-2xl p-8 border border-navy-100"
             >
               <div className="text-gold-500 text-2xl mb-4">★★★★★</div>
               <blockquote className="text-ink-700 leading-relaxed text-sm mb-6">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
               <figcaption className="text-sm">
-                <div className="font-medium text-forest-900">{t.name}</div>
+                <div className="font-medium text-navy-900">{t.name}</div>
                 <div className="text-xs text-ink-700/70">{t.case}</div>
               </figcaption>
             </figure>

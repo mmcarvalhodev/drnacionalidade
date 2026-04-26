@@ -18,7 +18,7 @@ export default function Requisitos() {
     <section id="requisitos" className="py-24 bg-cream-50">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-5 relative">
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-forest-100 relative">
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-navy-100 relative">
             <Image
               src="/images/flag-pt.png"
               alt="Bandeira de Portugal"
@@ -27,7 +27,7 @@ export default function Requisitos() {
               className="object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 -right-6 bg-forest-900 text-cream-50 rounded-xl p-5 shadow-xl border border-gold-500/30 max-w-[220px] hidden md:block">
+          <div className="absolute -bottom-6 -right-6 bg-navy-900 text-cream-50 rounded-xl p-5 shadow-xl border border-gold-500/30 max-w-[220px] hidden md:block">
             <div className="text-xs uppercase tracking-widest text-gold-400 mb-1">
               Quem pode pedir
             </div>
@@ -41,7 +41,7 @@ export default function Requisitos() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Requisitos
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-forest-900 mb-4 leading-tight">
+          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-4 leading-tight">
             Quem pode obter<br />a nacionalidade portuguesa
           </h2>
           <div className="gold-rule w-20 mb-6" />
@@ -70,8 +70,8 @@ export default function Requisitos() {
             ))}
           </ul>
 
-          <div className="mt-8 p-5 bg-forest-50 border border-forest-100 rounded-xl flex items-start gap-3">
-            <svg className="w-5 h-5 text-forest-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <div className="mt-8 p-5 bg-navy-50 border border-navy-100 rounded-xl flex items-start gap-3">
+            <svg className="w-5 h-5 text-navy-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="9" />
               <path d="M12 8v4M12 16h.01" />
             </svg>
@@ -81,7 +81,7 @@ export default function Requisitos() {
                 href={site.whatsapp.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-forest-800 font-medium underline decoration-gold-500 underline-offset-2 hover:text-forest-900"
+                className="text-navy-800 font-medium underline decoration-gold-500 underline-offset-2 hover:text-navy-900"
               >
                 Fale com o Dr. Renan
               </a>{" "}

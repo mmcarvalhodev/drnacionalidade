@@ -47,7 +47,7 @@ export default async function BlogPost({
         <div className="max-w-3xl mx-auto px-6">
           <Link
             href="/blog"
-            className="text-sm text-forest-700 hover:text-forest-900 inline-flex items-center gap-2 mb-8"
+            className="text-sm text-navy-700 hover:text-navy-900 inline-flex items-center gap-2 mb-8"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -58,7 +58,7 @@ export default async function BlogPost({
           <div className="text-xs uppercase tracking-widest text-gold-600 mb-3">
             {post.category}
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl text-forest-900 leading-tight mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-navy-900 leading-tight mb-4">
             {post.title}
           </h1>
           <div className="text-sm text-ink-700/60 mb-10">
@@ -66,7 +66,7 @@ export default async function BlogPost({
           </div>
 
           {post.cover ? (
-            <div className="aspect-[16/9] rounded-2xl overflow-hidden mb-12 bg-forest-100">
+            <div className="aspect-[16/9] rounded-2xl overflow-hidden mb-12 bg-navy-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={post.cover} alt={post.title} className="w-full h-full object-cover" />
             </div>
@@ -76,7 +76,7 @@ export default async function BlogPost({
             <MDXRemote source={post.content} />
           </div>
 
-          <div className="mt-16 p-8 bg-forest-900 text-cream-50 rounded-2xl text-center">
+          <div className="mt-16 p-8 bg-navy-900 text-cream-50 rounded-2xl text-center">
             <h2 className="font-serif text-2xl mb-3">Tem dúvidas sobre o seu caso?</h2>
             <p className="text-cream-100/80 mb-6">
               Converse diretamente com o Dr. Renan no WhatsApp.
@@ -85,7 +85,7 @@ export default async function BlogPost({
               href={site.whatsapp.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold-500 text-forest-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-400 transition-colors"
+              className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-400 transition-colors"
             >
               Falar no WhatsApp
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

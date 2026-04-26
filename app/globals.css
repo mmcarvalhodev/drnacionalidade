@@ -4,11 +4,11 @@
   --color-cream-50: #fbf8f3;
   --color-cream-100: #f5efe5;
 
-  --color-forest-50: #f1f6f3;
-  --color-forest-100: #dde9e1;
-  --color-forest-700: #1d4a3a;
-  --color-forest-800: #143628;
-  --color-forest-900: #0d2a1f;
+  --color-navy-50: #eef3fa;
+  --color-navy-100: #d4e2f0;
+  --color-navy-700: #1e3a5f;
+  --color-navy-800: #142c4c;
+  --color-navy-900: #0c1f3d;
 
   --color-gold-400: #d4b06a;
   --color-gold-500: #c9a961;
@@ -42,7 +42,7 @@ body {
 
 .hero-grad {
   background:
-    linear-gradient(180deg, rgba(13, 42, 31, 0.92) 0%, rgba(13, 42, 31, 0.78) 60%, rgba(13, 42, 31, 0.92) 100%),
+    linear-gradient(180deg, rgba(12, 31, 61, 0.92) 0%, rgba(12, 31, 61, 0.78) 60%, rgba(12, 31, 61, 0.92) 100%),
     url('https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1800&q=80') center/cover;
 }
 
@@ -65,7 +65,7 @@ details[open] .faq-icon {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -20px rgba(13, 42, 31, 0.25);
+  box-shadow: 0 20px 40px -20px rgba(12, 31, 61, 0.25);
 }
 
 .wa-pulse::before {
@@ -86,7 +86,7 @@ details[open] .faq-icon {
 .prose-custom h2 {
   font-family: var(--font-serif);
   font-size: 2rem;
-  color: var(--color-forest-900);
+  color: var(--color-navy-900);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -94,7 +94,7 @@ details[open] .faq-icon {
 .prose-custom h3 {
   font-family: var(--font-serif);
   font-size: 1.5rem;
-  color: var(--color-forest-900);
+  color: var(--color-navy-900);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -104,7 +104,7 @@ details[open] .faq-icon {
   margin-bottom: 1.25rem;
 }
 .prose-custom a {
-  color: var(--color-forest-800);
+  color: var(--color-navy-800);
   text-decoration: underline;
   text-decoration-color: var(--color-gold-500);
   text-underline-offset: 3px;
@@ -127,6 +127,6 @@ details[open] .faq-icon {
   margin: 1.5rem 0;
 }
 .prose-custom strong {
-  color: var(--color-forest-900);
+  color: var(--color-navy-900);
   font-weight: 600;
 }

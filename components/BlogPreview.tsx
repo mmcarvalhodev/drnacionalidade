@@ -13,13 +13,13 @@ export default function BlogPreview() {
             <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
               Artigos
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-forest-900">
+            <h2 className="font-serif text-4xl md:text-5xl text-navy-900">
               Últimas publicações
             </h2>
           </div>
           <Link
             href="/blog"
-            className="text-sm font-medium text-forest-800 hover:text-forest-900 inline-flex items-center gap-2"
+            className="text-sm font-medium text-navy-800 hover:text-navy-900 inline-flex items-center gap-2"
           >
             Ver todos os artigos
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -33,9 +33,9 @@ export default function BlogPreview() {
             <Link
               key={p.slug}
               href={`/blog/${p.slug}`}
-              className="card-hover bg-cream-50 rounded-2xl overflow-hidden border border-forest-100 block"
+              className="card-hover bg-cream-50 rounded-2xl overflow-hidden border border-navy-100 block"
             >
-              <div className="aspect-[16/10] overflow-hidden bg-forest-100">
+              <div className="aspect-[16/10] overflow-hidden bg-navy-100">
                 {p.cover ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={p.cover} alt={p.title} className="w-full h-full object-cover" />
@@ -45,7 +45,7 @@ export default function BlogPreview() {
                 <div className="text-xs uppercase tracking-widest text-gold-600 mb-2">
                   {p.category}
                 </div>
-                <h3 className="font-serif text-xl text-forest-900 mb-3 leading-snug">
+                <h3 className="font-serif text-xl text-navy-900 mb-3 leading-snug">
                   {p.title}
                 </h3>
                 <p className="text-sm text-ink-700/80 leading-relaxed mb-4">

@@ -9,7 +9,7 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="bg-forest-900 text-cream-50/90 border-t border-gold-500/20">
+    <section className="bg-navy-900 text-cream-50/90 border-t border-gold-500/20">
       <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         {items.map((item) => (
           <div key={item.label}>

@@ -3,15 +3,15 @@ import { site } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-forest-900 border-t border-cream-50/10 text-cream-100/70 text-sm">
+    <footer className="bg-navy-900 border-t border-cream-50/10 text-cream-100/70 text-sm">
       <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-4">
             <Image
               src="/images/logo-r.png"
               alt="R. Nacionalidade"
-              width={44}
-              height={44}
+              width={64}
+              height={64}
               className="rounded-md ring-1 ring-cream-50/20"
             />
             <div>

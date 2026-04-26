@@ -2,7 +2,7 @@ import { site } from "@/lib/site";
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 bg-forest-900 text-cream-50 relative overflow-hidden">
+    <section id="contato" className="py-24 bg-navy-900 text-cream-50 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-4">
           Vamos conversar
@@ -20,7 +20,7 @@ export default function Contact() {
             href={site.whatsapp.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gold-500 text-forest-900 px-7 py-4 rounded-full font-semibold hover:bg-gold-400 transition-colors"
+            className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-7 py-4 rounded-full font-semibold hover:bg-gold-400 transition-colors"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.52 3.48A12 12 0 003.45 20.42L2 22l1.66-1.42a12 12 0 0016.86-17.1zM12 20a8 8 0 01-4.07-1.11l-.29-.17-3 .8.8-2.92-.18-.3A8 8 0 1112 20z" />

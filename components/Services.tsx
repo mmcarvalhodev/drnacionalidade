@@ -59,7 +59,7 @@ export default function Services() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Áreas de atuação
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-forest-900 mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-4">
             Como podemos te ajudar
           </h2>
           <div className="gold-rule w-24 mx-auto" />
@@ -69,9 +69,9 @@ export default function Services() {
           {services.map((s) => (
             <article
               key={s.title}
-              className="card-hover bg-cream-50 border border-forest-100 rounded-2xl p-8"
+              className="card-hover bg-cream-50 border border-navy-100 rounded-2xl p-8"
             >
-              <div className="w-12 h-12 rounded-full bg-forest-800 grid place-items-center mb-5">
+              <div className="w-12 h-12 rounded-full bg-navy-800 grid place-items-center mb-5">
                 <svg
                   className="w-6 h-6 text-gold-400"
                   fill="none"
@@ -82,12 +82,12 @@ export default function Services() {
                   {s.icon}
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl text-forest-900 mb-3">{s.title}</h3>
+              <h3 className="font-serif text-2xl text-navy-900 mb-3">{s.title}</h3>
               <p className="text-ink-700 leading-relaxed text-sm">{s.body}</p>
             </article>
           ))}
 
-          <article className="card-hover bg-forest-800 text-cream-50 rounded-2xl p-8 flex flex-col justify-between">
+          <article className="card-hover bg-navy-800 text-cream-50 rounded-2xl p-8 flex flex-col justify-between">
             <div>
               <h3 className="font-serif text-2xl mb-3">Não sabe por onde começar?</h3>
               <p className="text-cream-100/85 leading-relaxed text-sm mb-6">
