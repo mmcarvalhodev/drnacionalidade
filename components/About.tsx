@@ -26,7 +26,7 @@ export default function About() {
             Dr. Renan Mattos é advogado inscrito na Ordem dos Advogados de Portugal
             (cédula 68801P) e na Ordem dos Advogados do Brasil (RJ 197.344). Possui
             ampla experiência na área, assessorando descendentes, cônjuges e residentes
-            brasileiros no processo de aquisição de nacionalidade portuguesa.
+            brasileiros no processo de obtenção de nacionalidade portuguesa.
           </p>
           <p className="text-ink-700 leading-relaxed mb-8">
             O atendimento é feito diretamente pelo advogado — sem call center, sem

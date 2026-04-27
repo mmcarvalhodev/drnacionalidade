@@ -5,7 +5,7 @@ import { getAllPosts, formatDate } from "@/lib/posts";
 export const metadata: Metadata = {
   title: "Artigos sobre nacionalidade portuguesa",
   description:
-    "Análises e orientações sobre o processo de aquisição de nacionalidade portuguesa, transcrição de casamento e residência em Portugal.",
+    "Análises e orientações sobre o processo de obtenção de nacionalidade portuguesa, transcrição de casamento e residência em Portugal.",
 };
 
 export default function BlogIndex() {

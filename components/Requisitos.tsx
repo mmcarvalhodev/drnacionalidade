@@ -44,7 +44,7 @@ export default function Requisitos() {
           </h2>
           <div className="gold-rule w-20 mb-6" />
           <p className="text-ink-700 leading-relaxed mb-8">
-            A legislação portuguesa prevê diferentes caminhos para a aquisição da
+            A legislação portuguesa prevê diferentes caminhos para a obtenção da
             nacionalidade. Veja se você se enquadra em uma das hipóteses abaixo —
             cada caso tem particularidades próprias.
           </p>
