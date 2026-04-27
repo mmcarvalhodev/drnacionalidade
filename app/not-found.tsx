@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="py-32 text-center">
+    <section className="py-20 text-center">
       <div className="max-w-xl mx-auto px-6">
         <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-4">
           Erro 404
         </div>
-        <h1 className="font-serif text-5xl text-navy-900 mb-4">
+        <h1 className="font-serif text-4xl text-navy-900 mb-4">
           Página não encontrada
         </h1>
         <p className="text-ink-700 mb-8">

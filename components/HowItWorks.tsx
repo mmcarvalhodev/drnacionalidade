@@ -23,20 +23,20 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-24 bg-navy-900 text-cream-50">
+    <section id="como-funciona" className="py-16 md:py-24 bg-navy-900 text-cream-50">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-3">
             Processo transparente
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl mb-4">Como funciona</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-4">Como funciona</h2>
           <div className="gold-rule w-24 mx-auto" />
         </div>
 
         <div className="grid md:grid-cols-4 gap-8">
           {steps.map((s) => (
             <div key={s.n}>
-              <div className="font-serif text-7xl text-gold-500/40 mb-2">{s.n}</div>
+              <div className="font-serif text-5xl md:text-6xl text-gold-500/40 mb-2">{s.n}</div>
               <h3 className="font-serif text-xl mb-2 text-cream-50">{s.title}</h3>
               <p className="text-sm text-cream-100/75 leading-relaxed">{s.body}</p>
             </div>

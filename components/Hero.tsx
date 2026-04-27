@@ -3,17 +3,17 @@ import { site } from "@/lib/site";
 export default function Hero() {
   return (
     <section className="hero-grad text-cream-50 relative">
-      <div className="max-w-6xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-12 gap-10 items-center">
+      <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-7">
-          <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-6">
+          <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-5">
             Advocacia • Atuação em todos os países
           </div>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-5">
             A sua cidadania portuguesa,<br />
             conduzida por uma equipe<br />
             <span className="text-gold-400 italic">luso-brasileira.</span>
           </h1>
-          <p className="text-lg text-cream-100/85 max-w-xl mb-10 leading-relaxed">
+          <p className="text-base md:text-lg text-cream-100/85 max-w-xl mb-8 leading-relaxed">
             Equipe especializada em direito da nacionalidade portuguesa, liderada por
             advogado luso-brasileiro. Atendimento próximo, do primeiro contato à entrega
             do passaporte.

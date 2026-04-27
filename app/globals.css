@@ -41,9 +41,37 @@ body {
 }
 
 .hero-grad {
-  background:
-    linear-gradient(90deg, rgba(0, 98, 51, 0.88) 0%, rgba(0, 98, 51, 0.85) 35%, rgba(218, 41, 28, 0.82) 65%, rgba(218, 41, 28, 0.86) 100%),
-    url('https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1800&q=80') center/cover;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1800&q=80') center/cover;
+  isolation: isolate;
+}
+.hero-grad::before,
+.hero-grad::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-grad::before {
+  background: rgba(0, 98, 51, 0.88);
+  animation: hero-green 18s ease-in-out infinite;
+}
+.hero-grad::after {
+  background: rgba(218, 41, 28, 0.85);
+  animation: hero-red 18s ease-in-out infinite;
+}
+.hero-grad > * {
+  position: relative;
+  z-index: 1;
+}
+@keyframes hero-green {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@keyframes hero-red {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
 details > summary {

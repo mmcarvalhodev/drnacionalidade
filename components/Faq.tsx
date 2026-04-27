@@ -23,13 +23,13 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="py-24">
+    <section id="faq" className="py-16 md:py-24">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Dúvidas frequentes
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-navy-900 mb-4">
             Perguntas que sempre recebemos
           </h2>
           <div className="gold-rule w-24 mx-auto" />

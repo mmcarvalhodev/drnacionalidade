@@ -13,7 +13,7 @@ const requisitos = [
 
 export default function Requisitos() {
   return (
-    <section id="requisitos" className="py-24 bg-cream-50">
+    <section id="requisitos" className="py-16 md:py-24 bg-cream-50">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-5 relative">
           <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-navy-100 relative">
@@ -39,7 +39,7 @@ export default function Requisitos() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Requisitos
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-4 leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-navy-900 mb-4 leading-tight">
             Quem pode obter<br />a nacionalidade portuguesa
           </h2>
           <div className="gold-rule w-20 mb-6" />

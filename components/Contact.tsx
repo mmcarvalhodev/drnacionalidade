@@ -2,12 +2,12 @@ import { site } from "@/lib/site";
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 bg-navy-900 text-cream-50 relative overflow-hidden">
+    <section id="contato" className="py-16 md:py-24 bg-navy-900 text-cream-50 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-4">
           Vamos conversar
         </div>
-        <h2 className="font-serif text-4xl md:text-6xl mb-6 leading-tight">
+        <h2 className="font-serif text-3xl md:text-5xl mb-6 leading-tight">
           O primeiro passo
           <br />é uma conversa <span className="italic text-gold-400">sem compromisso.</span>
         </h2>

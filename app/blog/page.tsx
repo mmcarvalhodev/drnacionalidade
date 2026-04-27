@@ -18,7 +18,7 @@ export default function BlogIndex() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-4">
             Artigos
           </div>
-          <h1 className="font-serif text-5xl md:text-6xl mb-4 leading-tight">
+          <h1 className="font-serif text-4xl md:text-5xl mb-4 leading-tight">
             Sobre nacionalidade<br />e direito português
           </h1>
           <div className="gold-rule w-24 mx-auto mt-6" />

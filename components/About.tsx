@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="sobre" className="py-24">
+    <section id="sobre" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-5">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl border border-navy-100 bg-navy-100">
@@ -16,7 +16,7 @@ export default function About() {
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-600 mb-3">
             Quem te atende
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-navy-900 mb-6 leading-tight">
             Direito da nacionalidade
             <br />
             portuguesa.

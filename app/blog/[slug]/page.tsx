@@ -58,7 +58,7 @@ export default async function BlogPost({
           <div className="text-xs uppercase tracking-widest text-gold-600 mb-3">
             {post.category}
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl text-navy-900 leading-tight mb-4">
+          <h1 className="font-serif text-3xl md:text-4xl text-navy-900 leading-tight mb-4">
             {post.title}
           </h1>
           <div className="text-sm text-ink-700/60 mb-10">
