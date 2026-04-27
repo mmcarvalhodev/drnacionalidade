@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 export default function Hero() {
@@ -41,12 +42,14 @@ export default function Hero() {
 
         <div className="md:col-span-5 hidden md:block">
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl bg-navy-800">
-              {/* TODO: substituir pela foto real do escritório em /public/images/escritorio.jpg */}
-              <img
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl bg-navy-800 relative">
+              <Image
+                src="/images/escritorio.png"
                 alt="Equipe do escritório R. Nacionalidade"
-                className="w-full h-full object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                priority
+                className="object-cover"
               />
             </div>
           </div>
