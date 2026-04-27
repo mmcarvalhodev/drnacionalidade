@@ -10,12 +10,13 @@ export default function Hero() {
           </div>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
             A sua cidadania portuguesa,<br />
-            conduzida por um advogado<br />
-            <span className="text-gold-400 italic">luso-brasileiro.</span>
+            conduzida por uma equipe<br />
+            <span className="text-gold-400 italic">luso-brasileira.</span>
           </h1>
           <p className="text-lg text-cream-100/85 max-w-xl mb-10 leading-relaxed">
-            Ampla experiência no processo de aquisição de nacionalidade portuguesa.
-            Atendimento direto com o advogado, do primeiro contato à entrega do passaporte.
+            Equipe especializada em direito da nacionalidade portuguesa, liderada por
+            advogado luso-brasileiro. Atendimento próximo, do primeiro contato à entrega
+            do passaporte.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -41,23 +42,12 @@ export default function Hero() {
         <div className="md:col-span-5 hidden md:block">
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl bg-navy-800">
-              {/* TODO: substituir pela imagem real do passaporte português em /public/images/passport-pt.jpg */}
+              {/* TODO: substituir pela foto real do escritório em /public/images/escritorio.jpg */}
               <img
-                src="https://images.unsplash.com/photo-1569693799105-4eb645d89aea?w=800&q=80"
-                alt="Passaporte português"
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+                alt="Equipe do escritório R. Nacionalidade"
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-cream-50 text-navy-900 rounded-xl p-4 shadow-xl border border-gold-500/30 max-w-[220px]">
-              <div className="text-[10px] uppercase tracking-[0.25em] text-gold-600 mb-1">
-                Inscrição
-              </div>
-              <div className="text-sm font-medium leading-snug">
-                OAB Portugal · 68801P
-              </div>
-              <div className="text-sm font-medium leading-snug">
-                OAB Brasil · RJ 197.344
-              </div>
             </div>
           </div>
         </div>
