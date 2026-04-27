@@ -6,13 +6,13 @@ export default function Hero() {
     <section className="hero-grad text-cream-50 relative">
       <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-7">
-          <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-5">
+          <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-5 [text-shadow:0_0_14px_rgba(255,255,255,0.6)]">
             Advocacia • Atuação em todos os países
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-5">
             A sua cidadania portuguesa,<br />
             conduzida por uma equipe<br />
-            <span className="text-gold-400 italic">luso-brasileira.</span>
+            <span className="text-gold-400 italic [text-shadow:0_0_18px_rgba(255,255,255,0.7)]">luso-brasileira.</span>
           </h1>
           <p className="text-base md:text-lg text-cream-100/85 max-w-xl mb-8 leading-relaxed">
             Equipe especializada em direito da nacionalidade portuguesa, liderada por
