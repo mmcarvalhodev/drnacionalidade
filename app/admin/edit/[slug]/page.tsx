@@ -1,30 +1,49 @@
 import Link from "next/link";
-import { publishPost } from "../actions";
+import { notFound } from "next/navigation";
+import matter from "gray-matter";
+import { getPostFromGitHub } from "@/lib/github";
+import { updatePost } from "../../actions";
+import DeletePostButton from "../../DeletePostButton";
 
 export const metadata = {
-  title: "Novo artigo",
+  title: "Editar artigo",
   robots: { index: false, follow: false },
 };
 
 const ERROR_MESSAGES: Record<string, string> = {
   missing: "Preencha título, resumo e conteúdo.",
-  slug: "Não foi possível gerar um slug válido. Informe manualmente.",
-  github: "Falha ao enviar para o GitHub. Verifique o token e tente novamente.",
+  github: "Falha ao salvar no GitHub. Tente novamente.",
+  notfound: "Artigo não encontrado no GitHub.",
 };
 
-export default async function NewPostPage({
+export default async function EditPostPage({
+  params,
   searchParams,
 }: {
+  params: Promise<{ slug: string }>;
   searchParams: Promise<{ error?: string }>;
 }) {
+  const { slug } = await params;
   const { error } = await searchParams;
+
+  const existing = await getPostFromGitHub(slug);
+  if (!existing) notFound();
+
+  const { data, content } = matter(existing.mdx);
+  const title = String(data.title ?? "");
+  const excerpt = String(data.excerpt ?? "");
+  const category = String(data.category ?? "Artigo");
+  const cover = data.cover ? String(data.cover) : "";
+  const date = String(data.date ?? "");
+  const body = content.replace(/\\\{/g, "{").replace(/\\\}/g, "}").trim();
+
   const errorMessage = error ? ERROR_MESSAGES[error] : null;
 
   return (
     <div>
       <div className="mb-6 flex items-center justify-between">
         <h2 className="font-serif text-2xl font-semibold text-navy-900">
-          Novo artigo
+          Editar artigo
         </h2>
         <Link
           href="/admin"
@@ -41,9 +60,12 @@ export default async function NewPostPage({
       )}
 
       <form
-        action={publishPost}
+        action={updatePost}
         className="space-y-5 rounded border border-stone-200 bg-white p-6 shadow-sm"
       >
+        <input type="hidden" name="slug" value={slug} />
+        <input type="hidden" name="date" value={date} />
+
         <div>
           <label
             htmlFor="title"
@@ -56,27 +78,21 @@ export default async function NewPostPage({
             name="title"
             type="text"
             required
+            defaultValue={title}
             className="mt-1 block w-full rounded border border-stone-300 px-3 py-2 text-sm focus:border-navy-700 focus:outline-none focus:ring-1 focus:ring-navy-700"
           />
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
           <div>
-            <label
-              htmlFor="slug"
-              className="block text-sm font-medium text-stone-800"
-            >
-              Slug{" "}
-              <span className="font-normal text-stone-500">
-                (opcional — gerado a partir do título)
-              </span>
+            <label className="block text-sm font-medium text-stone-800">
+              Slug
             </label>
             <input
-              id="slug"
-              name="slug"
               type="text"
-              placeholder="ex: novidades-cidadania-2026"
-              className="mt-1 block w-full rounded border border-stone-300 px-3 py-2 text-sm focus:border-navy-700 focus:outline-none focus:ring-1 focus:ring-navy-700"
+              value={slug}
+              disabled
+              className="mt-1 block w-full rounded border border-stone-200 bg-stone-50 px-3 py-2 text-sm text-stone-500"
             />
           </div>
           <div>
@@ -90,7 +106,7 @@ export default async function NewPostPage({
               id="category"
               name="category"
               type="text"
-              defaultValue="Artigo"
+              defaultValue={category}
               className="mt-1 block w-full rounded border border-stone-300 px-3 py-2 text-sm focus:border-navy-700 focus:outline-none focus:ring-1 focus:ring-navy-700"
             />
           </div>
@@ -108,6 +124,7 @@ export default async function NewPostPage({
             name="excerpt"
             rows={2}
             required
+            defaultValue={excerpt}
             className="mt-1 block w-full rounded border border-stone-300 px-3 py-2 text-sm focus:border-navy-700 focus:outline-none focus:ring-1 focus:ring-navy-700"
           />
         </div>
@@ -124,6 +141,7 @@ export default async function NewPostPage({
             id="cover"
             name="cover"
             type="url"
+            defaultValue={cover}
             placeholder="https://..."
             className="mt-1 block w-full rounded border border-stone-300 px-3 py-2 text-sm focus:border-navy-700 focus:outline-none focus:ring-1 focus:ring-navy-700"
           />
@@ -141,7 +159,7 @@ export default async function NewPostPage({
             name="content"
             rows={16}
             required
-            placeholder="Escreva o texto do artigo aqui..."
+            defaultValue={body}
             className="mt-1 block w-full rounded border border-stone-300 px-3 py-2 text-sm focus:border-navy-700 focus:outline-none focus:ring-1 focus:ring-navy-700"
           />
           <p className="mt-1 text-xs text-stone-500">
@@ -149,21 +167,34 @@ export default async function NewPostPage({
           </p>
         </div>
 
-        <div className="flex items-center justify-end gap-3 border-t border-stone-200 pt-4">
-          <Link
-            href="/admin"
-            className="rounded border border-stone-300 px-4 py-2 text-sm text-stone-700 hover:bg-stone-100"
-          >
-            Cancelar
-          </Link>
-          <button
-            type="submit"
-            className="rounded bg-navy-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-navy-900"
-          >
-            Publicar
-          </button>
+        <div className="flex items-center justify-between border-t border-stone-200 pt-4">
+          <div />
+          <div className="flex items-center gap-3">
+            <Link
+              href="/admin"
+              className="rounded border border-stone-300 px-4 py-2 text-sm text-stone-700 hover:bg-stone-100"
+            >
+              Cancelar
+            </Link>
+            <button
+              type="submit"
+              className="rounded bg-navy-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-navy-900"
+            >
+              Salvar alterações
+            </button>
+          </div>
         </div>
       </form>
+
+      <div className="mt-6 flex items-center justify-between rounded border border-red-200 bg-red-50/50 p-4">
+        <div>
+          <h3 className="text-sm font-semibold text-red-900">Zona de risco</h3>
+          <p className="text-xs text-red-700">
+            Excluir o artigo permanentemente do site.
+          </p>
+        </div>
+        <DeletePostButton slug={slug} title={title} variant="danger" />
+      </div>
     </div>
   );
 }
