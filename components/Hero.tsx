@@ -6,13 +6,13 @@ export default function Hero() {
     <section className="hero-grad text-cream-50 relative">
       <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-7">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold-300 mb-5 [text-shadow:0_2px_4px_rgba(0,0,0,0.7),0_4px_12px_rgba(0,0,0,0.55)]">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold-300 mb-5 [text-shadow:0_1px_2px_rgba(0,0,0,0.95),0_2px_6px_rgba(0,0,0,0.85),0_4px_14px_rgba(0,0,0,0.7)]">
             Advocacia • Atuação em todos os países
           </div>
-          <h1 className="font-serif font-semibold text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-5 [text-shadow:0_2px_8px_rgba(0,0,0,0.55),0_1px_2px_rgba(0,0,0,0.45)]">
+          <h1 className="font-serif font-semibold text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-5 [text-shadow:0_1px_2px_rgba(0,0,0,0.85),0_2px_8px_rgba(0,0,0,0.7),0_4px_16px_rgba(0,0,0,0.55)]">
             A sua cidadania portuguesa,<br />
             conduzida por uma equipe<br />
-            <span className="text-gold-300 italic [text-shadow:0_3px_6px_rgba(0,0,0,0.75),0_6px_18px_rgba(0,0,0,0.5)]">luso-brasileira.</span>
+            <span className="text-gold-300 italic [text-shadow:0_2px_3px_rgba(0,0,0,0.95),0_4px_10px_rgba(0,0,0,0.8),0_8px_22px_rgba(0,0,0,0.6)]">luso-brasileira.</span>
           </h1>
           <p className="text-base md:text-lg font-medium text-cream-50 max-w-xl mb-8 leading-relaxed [text-shadow:0_1px_4px_rgba(0,0,0,0.4)]">
             Equipe especializada em direito da nacionalidade portuguesa, liderada por
