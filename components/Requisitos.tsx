@@ -3,14 +3,12 @@ import { site } from "@/lib/site";
 
 const requisitos = [
   "Ter mais de 18 anos ou ser emancipado de acordo com a lei portuguesa",
-  "Residir legalmente em Portugal há pelo menos 5 anos, com ou sem título de residência",
+  "Residir legalmente em Portugal há pelo menos 7 anos, com título de residência",
   "Conhecer suficientemente a língua portuguesa",
-  "Ter pais portugueses",
+  "Ter ao menos um genitor português(a)",
   "Ser filho ou filha de pessoa portuguesa",
   "Ser neto ou neta de pessoa portuguesa",
-  "Ter sido adotado por pessoa portuguesa antes dos 18 anos e antes de 8 de outubro de 1981",
   "Estar casado ou viver em união de fato com pessoa portuguesa há mais de 3 anos",
-  "Pertencer a uma comunidade portuguesa no estrangeiro",
 ];
 
 export default function Requisitos() {

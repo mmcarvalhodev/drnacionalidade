@@ -17,21 +17,21 @@ export default function About() {
             Quem te atende
           </div>
           <h2 className="font-serif text-4xl md:text-5xl text-navy-900 mb-6 leading-tight">
-            Direito da nacionalidade,
+            Direito da nacionalidade
             <br />
-            com presença real em Portugal.
+            portuguesa.
           </h2>
           <div className="gold-rule w-20 mb-6" />
           <p className="text-ink-700 leading-relaxed mb-4">
             Dr. Renan Mattos é advogado inscrito na Ordem dos Advogados de Portugal
-            (cédula 68801P) e na Ordem dos Advogados do Brasil (RJ 197.344). Atua há
-            mais de uma década assessorando descendentes, cônjuges e residentes
+            (cédula 68801P) e na Ordem dos Advogados do Brasil (RJ 197.344). Possui
+            ampla experiência na área, assessorando descendentes, cônjuges e residentes
             brasileiros no processo de aquisição de nacionalidade portuguesa.
           </p>
           <p className="text-ink-700 leading-relaxed mb-8">
             O atendimento é feito diretamente pelo advogado — sem call center, sem
-            intermediários. Cada cliente recebe um plano personalizado, com prazos
-            realistas e honorários definidos antes do início.
+            intermediários. Cada cliente recebe um plano personalizado, com honorários
+            definidos antes do início.
           </p>
           <div className="flex flex-wrap gap-6 text-sm">
             <div className="flex items-center gap-2 text-ink-700">

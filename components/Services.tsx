@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 const services = [
   {
     title: "Nacionalidade portuguesa",
-    body: "Para descendentes, cônjuges e residentes legais há mais de 5 anos. Processo conduzido na íntegra, do levantamento documental ao registro.",
+    body: "Para descendentes, cônjuges e residentes legais há mais de 7 anos. Processo conduzido na íntegra, do levantamento documental ao registro.",
     icon: (
       <>
         <path d="M5 8a7 7 0 1114 0A7 7 0 015 8z" />
@@ -41,11 +41,13 @@ const services = [
     ),
   },
   {
-    title: "Residência em Portugal",
-    body: "Orientação sobre vistos, NIF, NISS e o caminho mais adequado para você fixar residência legalmente em território português.",
+    title: "Montagem e protocolo do processo",
+    body: "Montagem do dossiê, protocolo junto aos órgãos competentes e acompanhamento integral até a finalização do processo.",
     icon: (
       <>
-        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6m-6 0v-5h6v5" />
+        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+        <rect x="9" y="3" width="6" height="4" rx="1" />
+        <path d="M9 14l2 2 4-4" />
       </>
     ),
   },

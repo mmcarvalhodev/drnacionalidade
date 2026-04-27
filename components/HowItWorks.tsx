@@ -7,7 +7,7 @@ const steps = [
   {
     n: "02",
     title: "Plano e proposta",
-    body: "Apresentação clara dos documentos, prazos e honorários — sem surpresas no meio do caminho.",
+    body: "Apresentação clara dos documentos e honorários — sem surpresas no meio do caminho.",
   },
   {
     n: "03",

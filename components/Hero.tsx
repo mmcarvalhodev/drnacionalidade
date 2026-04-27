@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-7">
           <div className="text-[11px] uppercase tracking-[0.3em] text-gold-400 mb-6">
-            Advocacia • Lisboa &amp; Rio de Janeiro
+            Advocacia • Atuação em todos os países
           </div>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
             A sua cidadania portuguesa,<br />
@@ -14,7 +14,7 @@ export default function Hero() {
             <span className="text-gold-400 italic">luso-brasileiro.</span>
           </h1>
           <p className="text-lg text-cream-100/85 max-w-xl mb-10 leading-relaxed">
-            Mais de uma década atuando no processo de aquisição de nacionalidade.
+            Ampla experiência no processo de aquisição de nacionalidade portuguesa.
             Atendimento direto com o advogado, do primeiro contato à entrega do passaporte.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -41,17 +41,22 @@ export default function Hero() {
         <div className="md:col-span-5 hidden md:block">
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl bg-navy-800">
-              {/* TODO: substituir por foto real do Dr. Renan em /public/images/renan.jpg */}
+              {/* TODO: substituir pela imagem real do passaporte português em /public/images/passport-pt.jpg */}
               <img
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=80"
-                alt="Dr. Renan Mattos"
+                src="https://images.unsplash.com/photo-1569693799105-4eb645d89aea?w=800&q=80"
+                alt="Passaporte português"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-cream-50 text-navy-900 rounded-xl p-4 shadow-xl border border-gold-500/30 max-w-[200px]">
-              <div className="text-3xl font-serif font-semibold">+10</div>
-              <div className="text-xs text-ink-700 leading-snug">
-                anos de atuação em direito da nacionalidade
+            <div className="absolute -bottom-6 -left-6 bg-cream-50 text-navy-900 rounded-xl p-4 shadow-xl border border-gold-500/30 max-w-[220px]">
+              <div className="text-[10px] uppercase tracking-[0.25em] text-gold-600 mb-1">
+                Inscrição
+              </div>
+              <div className="text-sm font-medium leading-snug">
+                OAB Portugal · 68801P
+              </div>
+              <div className="text-sm font-medium leading-snug">
+                OAB Brasil · RJ 197.344
               </div>
             </div>
           </div>
