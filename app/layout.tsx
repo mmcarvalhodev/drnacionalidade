@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Advocacia especializada em nacionalidade portuguesa. Mais de 10 anos de atuação. OAB Portugal e Brasil. Atendimento direto com o advogado em Lisboa e Rio de Janeiro.",
+    "Advocacia especializada em nacionalidade portuguesa. Mais de 10 anos de atuação. OA Portugal e OAB Brasil. Atendimento direto com o advogado em Lisboa e Rio de Janeiro.",
   keywords: [
     "nacionalidade portuguesa",
     "cidadania portuguesa",

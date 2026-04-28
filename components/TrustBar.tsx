@@ -2,7 +2,7 @@ import { site } from "@/lib/site";
 
 export default function TrustBar() {
   const items = [
-    { label: "OAB Portugal", value: site.oab.portugal },
+    { label: "OA Portugal", value: site.oab.portugal },
     { label: "OAB Brasil", value: site.oab.brasil },
     { label: "Atuação", value: "Lisboa & Rio" },
     { label: "Experiência", value: "+10 anos" },

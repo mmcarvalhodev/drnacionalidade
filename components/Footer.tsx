@@ -29,7 +29,7 @@ export default function Footer() {
         <div>
           <div className="text-cream-50 font-medium mb-3">Credenciais</div>
           <ul className="space-y-1">
-            <li>OAB Portugal — {site.oab.portugal}</li>
+            <li>OA Portugal — {site.oab.portugal}</li>
             <li>OAB Brasil — {site.oab.brasil}</li>
             <li>CNPJ {site.cnpj}</li>
           </ul>
