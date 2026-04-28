@@ -3,6 +3,7 @@ import { Inter, Cormorant_Garamond } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsapp from "@/components/FloatingWhatsapp";
+import Analytics from "@/components/Analytics";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -68,6 +69,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingWhatsapp />
+        <Analytics />
       </body>
     </html>
   );
