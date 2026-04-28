@@ -25,6 +25,8 @@ export default function Analytics() {
       if (!/wa\.me\/|api\.whatsapp\.com/.test(href)) return;
       window.gtag?.("event", "conversion", {
         send_to: `${GADS_ID}/${GADS_CONVERSION_LABEL}`,
+        value: 1.0,
+        currency: "BRL",
       });
     };
 
