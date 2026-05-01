@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { site } from "@/lib/site";
+import WhatsAppCTA from "./WhatsAppCTA";
 
 export default function Footer() {
   return (
@@ -43,14 +44,9 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href={site.whatsapp.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gold-400"
-              >
+              <WhatsAppCTA className="hover:text-gold-400">
                 WhatsApp {site.whatsapp.display}
-              </a>
+              </WhatsAppCTA>
             </li>
           </ul>
         </div>

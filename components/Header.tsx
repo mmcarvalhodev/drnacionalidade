@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import WhatsAppCTA from "./WhatsAppCTA";
 
 export default function Header() {
   return (
@@ -31,17 +32,12 @@ export default function Header() {
           <Link href="/blog" className="hover:text-navy-800">Artigos</Link>
         </nav>
 
-        <a
-          href={site.whatsapp.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center gap-2 bg-navy-800 text-cream-50 px-4 py-2 rounded-full text-sm font-medium hover:bg-navy-900 transition-colors"
-        >
+        <WhatsAppCTA className="hidden md:inline-flex items-center gap-2 bg-navy-800 text-cream-50 px-4 py-2 rounded-full text-sm font-medium hover:bg-navy-900 transition-colors">
           Falar agora
           <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path d="M5 12h14M13 5l7 7-7 7" />
           </svg>
-        </a>
+        </WhatsAppCTA>
       </div>
     </header>
   );

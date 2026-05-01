@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { site } from "@/lib/site";
+import WhatsAppCTA from "./WhatsAppCTA";
 
 const requisitos = [
   "Ter mais de 18 anos ou ser emancipado de acordo com a lei portuguesa",
@@ -75,14 +75,9 @@ export default function Requisitos() {
             </svg>
             <p className="text-sm text-ink-700 leading-relaxed">
               Não tem certeza em qual caminho se encaixa?{" "}
-              <a
-                href={site.whatsapp.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-navy-800 font-medium underline decoration-gold-500 underline-offset-2 hover:text-navy-900"
-              >
+              <WhatsAppCTA className="text-navy-800 font-medium underline decoration-gold-500 underline-offset-2 hover:text-navy-900 inline bg-transparent p-0 border-0">
                 Fale com o Dr. Renan
-              </a>{" "}
+              </WhatsAppCTA>{" "}
               — em poucos minutos identificamos a hipótese aplicável ao seu caso.
             </p>
           </div>

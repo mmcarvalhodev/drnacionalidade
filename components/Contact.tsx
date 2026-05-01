@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import WhatsAppCTA from "./WhatsAppCTA";
 
 export default function Contact() {
   return (
@@ -16,17 +17,12 @@ export default function Contact() {
           advogado.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a
-            href={site.whatsapp.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-7 py-4 rounded-full font-semibold hover:bg-gold-400 transition-colors"
-          >
+          <WhatsAppCTA className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-7 py-4 rounded-full font-semibold hover:bg-gold-400 transition-colors">
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.52 3.48A12 12 0 003.45 20.42L2 22l1.66-1.42a12 12 0 0016.86-17.1zM12 20a8 8 0 01-4.07-1.11l-.29-.17-3 .8.8-2.92-.18-.3A8 8 0 1112 20z" />
             </svg>
             WhatsApp
-          </a>
+          </WhatsAppCTA>
           <a
             href={`mailto:${site.email}`}
             className="inline-flex items-center gap-2 border border-cream-50/30 px-7 py-4 rounded-full font-medium hover:bg-cream-50/10 transition-colors"

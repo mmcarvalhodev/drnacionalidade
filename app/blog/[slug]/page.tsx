@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug, formatDate } from "@/lib/posts";
-import { site } from "@/lib/site";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 type Params = { slug: string };
 
@@ -81,17 +81,12 @@ export default async function BlogPost({
             <p className="text-cream-100/80 mb-6">
               Converse diretamente com o Dr. Renan no WhatsApp.
             </p>
-            <a
-              href={site.whatsapp.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-400 transition-colors"
-            >
+            <WhatsAppCTA className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-400 transition-colors">
               Falar no WhatsApp
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
-            </a>
+            </WhatsAppCTA>
           </div>
         </div>
       </article>

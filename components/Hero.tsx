@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { site } from "@/lib/site";
+import WhatsAppCTA from "./WhatsAppCTA";
 
 export default function Hero() {
   return (
@@ -20,17 +20,12 @@ export default function Hero() {
             do passaporte.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a
-              href={site.whatsapp.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-400 transition-colors"
-            >
+            <WhatsAppCTA className="inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-400 transition-colors">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.52 3.48A12 12 0 003.45 20.42L2 22l1.66-1.42a12 12 0 0016.86-17.1zM12 20a8 8 0 01-4.07-1.11l-.29-.17-3 .8.8-2.92-.18-.3A8 8 0 1112 20zm4.45-5.6c-.24-.12-1.42-.7-1.64-.78s-.38-.12-.55.12-.62.78-.76.94-.28.18-.52.06a6.6 6.6 0 01-1.93-1.2 7.36 7.36 0 01-1.34-1.66c-.14-.24 0-.36.1-.48s.24-.28.36-.42a1.6 1.6 0 00.24-.4.45.45 0 000-.42c-.06-.12-.55-1.32-.75-1.8s-.4-.4-.55-.4h-.46a.9.9 0 00-.65.3 2.7 2.7 0 00-.85 2c0 1.18.86 2.32.98 2.48s1.7 2.6 4.13 3.64a14.2 14.2 0 001.42.52 3.4 3.4 0 001.55.1 2.55 2.55 0 001.66-1.18 2.06 2.06 0 00.14-1.18c-.06-.1-.22-.16-.46-.28z" />
               </svg>
               WhatsApp direto
-            </a>
+            </WhatsAppCTA>
             <a
               href="#servicos"
               className="inline-flex items-center gap-2 border border-cream-50/40 text-cream-50 px-6 py-3 rounded-full font-medium hover:bg-cream-50/10 transition-colors"
