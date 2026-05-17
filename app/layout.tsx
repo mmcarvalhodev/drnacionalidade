@@ -44,12 +44,21 @@ export const metadata: Metadata = {
     title: `${site.name} — ${site.tagline}`,
     description:
       "Advocacia especializada em nacionalidade portuguesa. Atendimento direto com o advogado em Lisboa e Rio de Janeiro.",
+    images: [
+      {
+        url: "/images/logo-r.png",
+        width: 500,
+        height: 500,
+        alt: `${site.name} · Nacionalidade Portuguesa`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} — ${site.tagline}`,
     description:
       "Advocacia especializada em nacionalidade portuguesa. Atendimento direto com o advogado.",
+    images: ["/images/logo-r.png"],
   },
   robots: { index: true, follow: true },
 };
